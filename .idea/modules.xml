@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/jarai.refactoring.java.iml" filepath="$PROJECT_DIR$/.idea/jarai.refactoring.java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tictactoe.original/tictactoe.original.iml" filepath="$PROJECT_DIR$/tictactoe.original/tictactoe.original.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zahlenraten.original/zahlenraten.original.iml" filepath="$PROJECT_DIR$/zahlenraten.original/zahlenraten.original.iml" />
+    </modules>
+  </component>
+</project>
