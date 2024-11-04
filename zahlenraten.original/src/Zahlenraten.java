@@ -1,28 +1,34 @@
-import javax.swing.*;
 import java.util.Random;
+import java.util.Scanner;
 
-public class Zahlenraten
-{
+public class Zahlenraten {
     public static void main(String[] args) {
-
-        //Der Computer denkt sich ein zufällige Zahl im Bereich 1 bis 100 aus: int geheimzahl = new Random().Next(1, 101);
-        int z =1 +  new Random().nextInt() % 100 ;
+        // Der Computer denkt sich ein zufällige Zahl im Bereich 1 bis 100 aus:
+        int z = new Random().nextInt(100) + 1;
         System.out.println("Errate eine Zahl zwischen 1 und 100");
-        //Nachdem der Anwender einen Tipp eingegeben hat, antwortet der Computer, ob der Tipp "Zu klein.", "Zu groß." oder "Richtig!" war.
-        int e = Integer.parseInt(JOptionPane.showInputDialog(String.format("Bitte Tip eingeben")));
+
+        Scanner scanner = new Scanner(System.in);
+        int e = scanner.nextInt();
         int g = 0;
         int a = 0;
-        while (g == 0)
-        {
 
-            if (e == z) { System.out.println("Richtig"); g = 1; JOptionPane.showInputDialog("du hast" + a + "Versuche gebraucht"); }
-            else if (z > e) {  e = Integer.parseInt(JOptionPane.showInputDialog("Ihre Zahl ist zu klein")); }
-            else if (z < e) {e = Integer.parseInt(JOptionPane.showInputDialog("Ihre Zahl ist zu gross")); }
+        while (g == 0) {
+            if (e == z) {
+                System.out.println("Richtig");
+                g = 1;
+                System.out.println("Du hast " + a + " Versuche gebraucht");
+                scanner.nextLine();
+            } else if (z > e) {
+                System.out.println("Ihre Zahl ist zu klein");
+                e = scanner.nextInt();
+            } else if (z < e) {
+                System.out.println("Ihre Zahl ist zu groß");
+                e = scanner.nextInt();
+            }
             a++;
+            System.out.println("Bitte versuchen Sie es erneut");
         }
 
+        scanner.close();
     }
-    //Der Anwender muss so lange einen Tipp eingeben, bis er die richtige Zahl erraten hat.
-    //Der Computer zeigt am Ende an, wieviele Versuche der Anwender benötigt hat
-
 }
