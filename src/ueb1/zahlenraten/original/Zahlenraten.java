@@ -1,3 +1,5 @@
+package ueb1.zahlenraten.original;
+
 import java.util.Random;
 import java.util.Scanner;
 

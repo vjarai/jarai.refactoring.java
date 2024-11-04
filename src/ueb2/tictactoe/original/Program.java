@@ -1,5 +1,6 @@
+package ueb2.tictactoe.original;
+
 import javax.swing.*;
-import java.io.Console;
 
 public class Program
     {
