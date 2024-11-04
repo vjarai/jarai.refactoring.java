@@ -1,4 +1,4 @@
-package ueb3.telefon.original;
+package ueb3.state.original;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ public class TelefonTests {
     public void kannAbhebenWählenSprechenSprechenAuflegen() {
         // Arrange
 
-        var telefon = new  ueb3.telefon.original.Telefon();
+        var telefon = new  ueb3.state.original.Telefon();
         //var telefon = new  ueb3.telefon.refactored.Telefon();
 
         // Act

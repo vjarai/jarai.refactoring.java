@@ -1,4 +1,4 @@
-package ueb3.telefon.refactored;
+package ueb3.state.refactored;
 
 public abstract class Zustand {
     private String bezeichnung;

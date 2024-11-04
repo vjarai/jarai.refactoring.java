@@ -1,4 +1,4 @@
-package ueb3.telefon.refactored;
+package ueb3.state.refactored;
 
 public class Verbunden extends Zustand {
     public Verbunden() {
